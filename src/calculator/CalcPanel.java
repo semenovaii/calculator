@@ -25,11 +25,11 @@ public class CalcPanel extends JPanel implements ActionListener {
 	JButton bclear;
 	JButton bequals;
 	JButton bplus;
-// начало вставки кода	
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№	
 	JButton bminus;
 	JButton bmultiply;
 	JButton bdivide;
-// окончание вставки
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№
 	
 	public CalcPanel()
 	{
@@ -51,11 +51,11 @@ public class CalcPanel extends JPanel implements ActionListener {
 		bclear=new JButton("C");
 		bequals = new JButton( "=");
 		bplus=new JButton("+");
-// начало вставки кода			
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№			
 		bminus = new JButton("-");    
 		bmultiply = new JButton("*");   
 		bdivide = new JButton("/");    	
-// окончание вставки кода
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№
 		
 		display.setBounds(0,0,235,50);
 		
@@ -67,17 +67,17 @@ public class CalcPanel extends JPanel implements ActionListener {
 		b4.setBounds(0,150,50,50);
 		b5.setBounds(50,150,50,50);
 		b6.setBounds(100,150,50,50);
-// начало вставки кода		
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№	
 		bminus.setBounds(154,150,80,50); 
-// окончание вставки кода
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№
 		
 		b7.setBounds(0,100,50,50);
 		b8.setBounds(50,100,50,50);
 		b9.setBounds(100,100,50,50);
-// начало вставки кода			
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№		
 		bmultiply.setBounds(154,100,40,50); 
 		bdivide.setBounds(194,100,40,50);
-// окончание вставки кода
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№
 		
 		b0.setBounds(0,250,50,50);
 		bdec.setBounds(50,250,50,50);
@@ -100,11 +100,11 @@ public class CalcPanel extends JPanel implements ActionListener {
 		add(bclear);
 		add(bequals);
 		add(bplus);
-// начало вставки кода			
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№			
 		add(bminus);
 		add(bmultiply);
 		add(bdivide);
-// окончание вставки кода		
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№		
 		
 		b1.addActionListener(this);
 		b2.addActionListener(this);
@@ -120,11 +120,11 @@ public class CalcPanel extends JPanel implements ActionListener {
 		bplus.addActionListener(this);
 		bclear.addActionListener(this);
 		bdec.addActionListener(this);
-// начало вставки кода			
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№		
 		bminus.addActionListener(this);
 		bmultiply.addActionListener(this);
 		bdivide.addActionListener(this);
-// окончание вставки кода			
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№			
 		
 	}
 	public void actionPerformed(ActionEvent e){
@@ -150,7 +150,7 @@ public class CalcPanel extends JPanel implements ActionListener {
 			usingFirst=false;
 			operator_="+";
 		}
-// начало вставки кода				
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№			
 		if(s.equals("-"))	
 		{
 			usingFirst=false;
@@ -175,7 +175,7 @@ public class CalcPanel extends JPanel implements ActionListener {
 				total=Double.parseDouble(num1)+Double.parseDouble(num2);
 				display.setText( ""+total );
 				break;
-// начало вставки кода					
+// РЅР°С‡Р°Р»Рѕ РёР·РјРµРЅРµРЅРёР№					
 			case '-':
 				total=Double.parseDouble(num1)-Double.parseDouble(num2);
 				display.setText( ""+total );
@@ -190,10 +190,10 @@ public class CalcPanel extends JPanel implements ActionListener {
 					display.setText( ""+total );
 				}
 				else
-					display.setText( "Делить на 0 нельзя");
+					display.setText( "Г„ГҐГ«ГЁГІГј Г­Г  0 Г­ГҐГ«ГјГ§Гї");
 				break;				
 			}
-// окончание вставки кода			
+// РѕРєРѕРЅС‡Р°РЅРёРµ РёР·РјРµРЅРµРЅРёР№			
 
 			usingFirst=true;
 			num1="";
